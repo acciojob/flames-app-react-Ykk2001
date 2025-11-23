@@ -4,7 +4,7 @@ function App() {
     const[name1,setName1]=useState('');
     const[name2,setName2]=useState('');
     const[result,setResult]=useState('')
-    const flamesArr=["Sibling","Friends","Love","Affection","Marriage","Enemy"];
+    const flamesArr=["Siblings","Friends","Love","Affection","Marriage","Enemy"];
    
     function calculateFLAMES()
     {
@@ -15,8 +15,8 @@ function App() {
         }
 
 
-        let str1=name1.toLowerCase().split('');//[r,a,d,h,a]
-        let str2=name2.toLowerCase().split('');//[d,h,a,r,a]
+        let str1=name1.split('');//[r,a,d,h,a]
+        let str2=name2.split('');//[d,h,a,r,a]
        
         for(let i=0;i<str1.length;i++)
         {
